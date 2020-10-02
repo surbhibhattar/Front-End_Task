@@ -1,0 +1,12 @@
+* {
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+#myData {
+  margin: 20px;
+}
