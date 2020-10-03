@@ -2,19 +2,21 @@ var url =
   "http://ec2-3-6-40-236.ap-south-1.compute.amazonaws.com/civicrm/sites/all/modules/civicrm/extern/rest.php?entity=contact&action=get&key=3ac2ed2bce3fbd3b27f225c32d80c82f&api_key=hP0SvTcj0fzQUOchaptOJJl1&json=1";
 
 function fetchData() {
-  //   fetch(url)
-  //     .then(function (response) {
-  //       return response.json();
-  //     })
-  //     .then(function (data) {
-  //       console.log(data);
-  //     })
-  //     .catch(function (err) {
-  //       console.log(err);
-  //     });
+  fetch(url, {
+    mode: "no-cors",
+  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
 }
 
-// fetchData();
+fetchData();
 
 var totalRecords = data.length;
 var currentPage = 0;
