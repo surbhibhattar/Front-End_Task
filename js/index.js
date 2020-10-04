@@ -6,11 +6,10 @@ function fetchData() {
     mode: "cors",
   })
     .then(function (response) {
-      console.log("response: ", response);
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
+      console.log("data: ", data);
     })
     .catch(function (err) {
       console.log(err);
@@ -44,7 +43,7 @@ function showRecords(records) {
       }
       let td = document.createElement("td");
       td.setAttribute("class", "actions");
-      td.innerHTML = `<a href="#">
+      td.innerHTML = `<a href="#" style="color:black">
       <svg
         width="1em"
         height="1em"
