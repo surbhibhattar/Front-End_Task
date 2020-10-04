@@ -3,9 +3,10 @@ var url =
 
 function fetchData() {
   fetch(url, {
-    mode: "no-cors",
+    mode: "cors",
   })
     .then(function (response) {
+      console.log("response: ", response);
       return response.json();
     })
     .then(function (data) {
@@ -32,10 +33,12 @@ function showRecords(records) {
       th.setAttribute("scope", "row");
       let input = document.createElement("input");
       input.setAttribute("type", "checkbox");
+      input.setAttribute("style", "width:20px;height:20px");
       th.appendChild(input);
       tr.appendChild(th);
       for (const [key, value] of Object.entries(data[i])) {
         let td = document.createElement("td");
+        td.setAttribute("class", "list_data");
         td.innerHTML = value;
         tr.appendChild(td);
       }

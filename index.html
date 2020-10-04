@@ -11,6 +11,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <script type="text/javascript" src="./static_data.js"></script>
     <script src="./js/index.js"></script>
   </head>
@@ -87,33 +91,174 @@
     </nav>
     <div class="container-fluid">
       <div class="row">
-        <div class="col" id="panel">
-          <div class="row" id="account">
-            <div class="col">image</div>
-            <div class="col">Welcome Gufran Pathan</div>
+        <div class="col-2" id="panel">
+          <div class="aligned">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20200327230544/g4gicon.png"
+              width="50"
+              alt=""
+            />
+            <div style="display: flex; flex-direction: column">
+              <span style="text-align: left; line-height: 1">Welcome</span>
+              <span style="text-align: left; line-height: 1"
+                >Gufran Pathan</span
+              >
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="col">
+              <div class="row">
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-bounding-box"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1H5v2H3v6h2v2h6v-2h2V5h-2V3zm1-2v3h3V1h-3zm3 11h-3v3h3v-3zM4 15v-3H1v3h3zM1 4h3V1H1v3z"
+                  />
+                </svg>
+                <span>Overview</span>
+              </div>
+
+              <div class="row">
+                <span style="border: 4px solid white" class="line"></span>
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-bounding-box"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1H5v2H3v6h2v2h6v-2h2V5h-2V3zm1-2v3h3V1h-3zm3 11h-3v3h3v-3zM4 15v-3H1v3h3zM1 4h3V1H1v3z"
+                  />
+                </svg>
+                <span>Voter Data</span>
+              </div>
+
+              <div class="row">
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-bounding-box"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1H5v2H3v6h2v2h6v-2h2V5h-2V3zm1-2v3h3V1h-3zm3 11h-3v3h3v-3zM4 15v-3H1v3h3zM1 4h3V1H1v3z"
+                  />
+                </svg>
+                <span>Volunteer Teams</span>
+              </div>
+
+              <div class="row">
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-bounding-box"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1H5v2H3v6h2v2h6v-2h2V5h-2V3zm1-2v3h3V1h-3zm3 11h-3v3h3v-3zM4 15v-3H1v3h3zM1 4h3V1H1v3z"
+                  />
+                </svg>
+                <span>Tasks</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="list" class="col-11">
+        <div id="list" class="col-10" style="background-color: #e5e5e5">
           <div id="myData">
-            <table class="table">
+            <div class="row">
+              <div class="col">
+                <span
+                  style="
+                    color: #2547bf;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 21px;
+                  "
+                  >Contacts</span
+                >
+                <hr id="contacts_hr" />
+              </div>
+              <div class="col">
+                <span
+                  style="
+                    color: #8097b1;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 21px;
+                  "
+                  >Lists</span
+                >
+                <hr />
+              </div>
+              <div class="col">
+                <span
+                  style="
+                    color: #8097b1;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 21px;
+                  "
+                  >Houses</span
+                >
+                <hr />
+              </div>
+              <div class="col">
+                <span
+                  style="
+                    color: #8097b1;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 21px;
+                  "
+                  >Streets</span
+                >
+                <hr />
+              </div>
+              <div class="col">
+                <span
+                  style="
+                    color: #8097b1;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 21px;
+                  "
+                  >Booths</span
+                >
+                <hr />
+              </div>
+            </div>
+
+            <table class="table table-borderless">
               <thead>
                 <tr>
                   <th scope="col">
                     <input
                       type="checkbox"
+                      id="list_header_checkbox"
                       aria-label="Checkbox for following text input"
                     />
                   </th>
-                  <th scope="col">NAME</th>
-                  <th scope="col">AGE</th>
-                  <th scope="col">GENDER</th>
-                  <th scope="col">BOOTH TYPE</th>
-                  <th scope="col">RELIGION</th>
-                  <th scope="col">EMPLOYMENT</th>
-                  <th scope="col">TAKE ACTION</th>
+                  <th scope="col" class="list_header">NAME</th>
+                  <th scope="col" class="list_header">AGE</th>
+                  <th scope="col" class="list_header">GENDER</th>
+                  <th scope="col" class="list_header">BOOTH TYPE</th>
+                  <th scope="col" class="list_header">RELIGION</th>
+                  <th scope="col" class="list_header">EMPLOYMENT</th>
+                  <th scope="col" class="list_header">TAKE ACTION</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody style="background-color: #fff">
                 <script>
                   showRecords(data);
                 </script>
